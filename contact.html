@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Travel Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Travel Blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dest.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <p>Have a question, suggestion, or just want to say hello? Feel free to get in touch with me using the
+                contact form below. I'll get back to you as soon as possible.</p>
+            <fieldset>
+                <legend>Contact Form</legend>
+                <form action="contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                    <fieldset>
+                        <legend>Preferred Contact Method:</legend>
+                        <label>
+                            <input type="radio" name="contact-method" value="email"> Email
+                        </label>
+                        <label>
+                            <input type="radio" name="contact-method" value="phone"> Phone
+                        </label>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 My Travel Blog
+    </footer>
+</body>
+
+</html>

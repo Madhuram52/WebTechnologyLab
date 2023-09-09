@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Added External CSS */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Travel Blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dest.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>My Trip to Paris</h2>
+            <p> <abbr title="City of Light">Paris</abbr>, the <strong>City of Light</strong>, welcomed me with open
+                arms.
+                The <cite>Eiffel Tower</cite>, bathed in a golden glow at night,
+                left me in awe. The <cite>Louvre Museum</cite>'s masterpieces inspired my soul, while Montmartre's
+                artistic ambiance
+                enchanted me. Savoring croissants in sidewalk cafes and wandering the romantic streets, I fell in love
+                with Paris. A journey filled with culture, cuisine, and cherished memories that will forever dance in my
+                heart.
+            </p>
+            <img src="https://i.natgeofe.com/k/6d4021bf-832e-49f6-b898-27b7fcd7cbf7/eiffel-tower-ground-up.jpg?w=1272&h=848"
+                alt="Eiffel Tower" width="300" height="auto">
+            <address>123 Travel Street, Paris</address>
+            <p>Paris is not just a destination; it's a journey through art, history, and romance, where every moment
+                becomes a cherished memory.</p>
+            <blockquote><i>Paris is always a good idea.</i> - Audrey Hepburn</blockquote>
+            <br>
+            <details>
+                <summary>More About My Trip</summary>
+                <p>I visited the <cite data-value="Notre Dame">Notre Dame</cite> Cathedral and enjoyed the stunning
+                    architecture.</p>
+                <p>What's Your Favorite Destination in Paris:
+                    <br>
+
+                    <datalist id="destinations">
+                        <option value="Eiffel Tower">
+                        <option value="Montmartre">
+                        <option value="Louvre Museum">
+                    </datalist>
+                    <label for="favorite-destination">Favorite Destination:</label>
+                    <input list="destinations" id="favorite-destination" name="favorite-destination">
+                </p>
+            </details>
+            <br>
+            <br>
+            <hr>
+            <div>
+                <h3>Travel Essentials</h3>
+                <dl>
+                    <dt>Weather</dt>
+                    <dd>Sunny and pleasant in summer.</dd>
+                    <dt>Language</dt>
+                    <dd>French</dd>
+                </dl>
+            </div>
+
+            <br>
+            <img src="https://ontheworldmap.com/france/city/paris/map-of-paris.jpg" alt="Paris Map" usemap="#paris-map"
+                width="500">
+            <br>
+            <hr>
+            <h3>My Travel Checklist</h3>
+            <ol>
+                <li>Pack sunscreen</li>
+                <li>Bring a camera</li>
+                <li>Learn basic French phrases</li>
+            </ol>
+            <hr>
+            <picture>
+                <source srcset="paris-mobile.jpg" media="(max-width: 768px)">
+                <img src="https://assets.cntraveller.in/photos/62752c1974266e7300892c46/16:9/w_1920%2Cc_limit/Seine%2520paris%2520bike-GettyImages-1161606501.jpeg"
+                    width="500">
+            </picture>
+            <!-- <audio controls>
+                <source src="paris-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <video controls width="400">
+                <source src="https://www.youtube.com/shorts/ITSf_5gM8TY" type="video/mp4">
+                Your browser does not support the video element.
+            </video> -->
+            <hr>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ITSf_5gM8TY" frameborder="0"
+                allowfullscreen></iframe>
+
+            <hr>
+            <p>Explore more about Paris on the <a href="https://en.wikipedia.org/wiki/Paris">Wikipedia page</a>.</p>
+            <p>Check out my photos on <a href="https://www.instagram.com/mytraveladventures/">Instagram</a>.</p>
+            <hr>
+
+            <section>
+                <h2>More Adventures Await</h2>
+                <p>While Paris was incredible, there are more adventures waiting to be explored. Stay tuned for updates
+                    on my
+                    next destination!</p>
+            </section>
+            <hr>
+
+            <h3>Travel Expenses</h3>
+            <table border="15">
+                <tr>
+                    <th>Expense Item</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Flights</td>
+                    <td>$800</td>
+                </tr>
+                <tr>
+                    <td>Accommodation</td>
+                    <td>$600</td>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td>$400</td>
+                </tr>
+            </table>
+            <hr>
+
+            <h3>Travel Companions</h3>
+            <p>I traveled to Paris with my <del>old</del> <ins>new</ins> friend, Sarah. We had an amazing time exploring
+                the city together.</p>
+
+            <p>Don't forget to <em>enjoy</em> the local cuisine, especially the <sub>delicious</sub> pastries and
+                <sup>exquisite</sup> wines!
+            </p>
+            <hr>
+            <fieldset>
+                <legend>Contact Form</legend>
+                <form action="contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                    <fieldset>
+                        <legend>Preferred Contact Method:</legend>
+                        <label>
+                            <input type="radio" name="contact-method" value="email"> Email
+                        </label>
+                        <label>
+                            <input type="radio" name="contact-method" value="phone"> Phone
+                        </label>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </article>
+    </main>
+
+    <footer>
+        &copy; 2023 My Travel Blog
+    </footer>
+
+    <script>
+    </script>
+</body>
+
+</html>
